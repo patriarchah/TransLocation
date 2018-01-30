@@ -1,0 +1,29 @@
+<ion-view view-title="cadastroVeiculos">
+	<ion-header-bar class="bar-energized">
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('veiculos')">
+	  <i  class="icon ion-android-arrow-back"></i>
+      Voltar
+    </button>
+		</div>
+
+	</ion-header-bar>
+
+	<ion-content ng-controller="veiculosCtrl">
+
+		<div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+
+			<div class="list no-border">
+                <h2 class="title"   style="font-size:30px; color:white; text-align: center; font-family:'Timmana',sans-serif; font-size:30px">
+					Cadastro de veiculos </h2>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="nome" placeholder="Modelo" ng-model="veiculo.modelo">
+				</div>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="idade" placeholder="Marca" ng-model="veiculo.marca">
+				</div>
+				<button class="orange full margin-bottom" ng-click="cadastrar()">Cadastrar</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

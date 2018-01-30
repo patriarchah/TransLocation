@@ -1,0 +1,39 @@
+<ion-view view-title="financeiro">
+	<ion-header-bar class="bar-energized">
+		<h1 class="title" style="text-align: center;">financeiro</h1>
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('alunosFinanceiro')">
+				  <i  class="icon ion-android-arrow-back"></i>
+				  Voltar
+				</button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content ng-controller="financeiroCtrl">
+
+		<div class="list">
+
+			<div id="item" ng-repeat="aluno in aluno  | filter:{nome:alunos.nome}">
+				<div id="item" ng-repeat="mes in aluno.financeiro">
+					<div class="list">
+
+						<div class="item">
+							<div class="right">
+								<h2>Não Pago</h2>
+
+								<input type="checkbox" class="switch orange">
+								<h2>Pago</h2>
+							</div>
+							<p>
+								<br />Mes: {{mes}}<br />
+								<br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</ion-content>
+</ion-view>

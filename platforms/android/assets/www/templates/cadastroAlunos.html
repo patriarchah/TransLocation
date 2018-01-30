@@ -1,0 +1,36 @@
+<ion-view view-title="cadastroAlunos">
+	<ion-header-bar class="bar-energized">
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('alunos')">
+	  <i  class="icon ion-android-arrow-back"></i>
+      Voltar
+    </button>
+		</div>
+
+	</ion-header-bar>
+
+	<ion-content ng-controller="alunosCtrl">
+		<div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+			
+			<div class="list no-border">
+
+				<h2 class="title"   style="font-size:30px; color:white; text-align: center; font-family:'Timmana',sans-serif; font-size:30px">
+					Cadastro de alunos </h2>
+		
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="nome" placeholder="Nome" ng-model="aluno.nome">
+				</div>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="idade" placeholder="Idade" ng-model="aluno.idade">
+				</div>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="responsavel" placeholder="Resposável" ng-model="aluno.responsavel">
+				</div>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="text" id="escola" placeholder="Escola" ng-model="aluno.escola">
+				</div>
+				<button class="orange full margin-bottom" ng-click="cadastrar()">Cadastrar</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

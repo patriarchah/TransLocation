@@ -1,0 +1,30 @@
+<ion-view view-title="alunos">
+	<ion-header-bar class="bar-energized">
+		<h1 class="title" style="text-align:center; font-family:'Timmana',sans-serif; font-size:24px">Alunos</h1>
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('home')">
+		  <i  class="icon ion-android-arrow-back"></i>
+		  Voltar
+		</button>
+		</div>
+	</ion-header-bar>
+	
+	<ion-content ng-controller="alunosCtrl">
+		<div class="list">
+			<div id="item" ng-repeat="aluno in alunos">
+				<img class="left avatar circle" src="img/perfil.png">
+
+				<button id="trash" class="icon ion-trash-a" ng-click="excluir($index)"></button>
+
+				<h2 id="titulo">{{aluno.nome}}</h2>
+				<p class="block-p">
+					Idade: {{aluno.idade}}<br />
+					<br /> Responsável: {{aluno.responsavel}}<br />
+					<br /> Escola: {{aluno.escola}}<br />
+					<br />
+				</p>
+			</div>
+		</div>
+	</ion-content>
+	<button class="orange big circle icon ion-plus shadow float-bottom-right" ng-click="go('cadastroAlunos')"></button>
+</ion-view>

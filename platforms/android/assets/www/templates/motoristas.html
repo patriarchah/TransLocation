@@ -1,0 +1,34 @@
+<ion-view view-title="motoristas">
+	<ion-header-bar class="bar-energized">
+		<h1 class="title" style="text-align: center; font-family:'Timmana',sans-serif; font-size:24px">Motoristas</h1>
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('home')">
+	  <i  class="icon ion-android-arrow-back"></i>
+	  Voltar
+    </button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content ng-controller="motoristaCtrl">
+		<div class="list">
+
+			<a href="#/perfilMotoristas" id="item" ng-repeat="motorista in motoristas" ng-click="selecionado(motorista)">
+				<div>
+					<img class="left avatar circle" src="img/perfil.png">
+					<button id="trash" class="icon ion-trash-a" ng-click="excluir($index)"></button>
+
+					<h2 id="titulo">{{motorista.nome}}</h2>
+					<p class="block-p">
+						Idade: {{motorista.idade}}<br />
+						<br /> CPF: {{motorista.cpf}}<br />
+						<br /> Endereço: {{motorista.endereco}}<br />
+						<br />
+					</p>
+				</div>
+			</a>
+		</div>
+
+	</ion-content>
+
+	<button class="orange big circle icon ion-plus shadow float-bottom-right" ng-click="go('cadastroMotoristas')"></button>
+</ion-view>

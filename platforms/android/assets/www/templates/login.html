@@ -1,0 +1,31 @@
+<ion-view view-title="login">
+	<ion-pane class="login-custom">
+
+		<ion-content ng-controller="loginCtrl">
+
+			<div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+				<div class="col-10"></div>
+				<div class="col" id="Formulario-login">
+					<img src="img/TransLocationLog.png">
+					<div class="space-huge"></div>
+					<div class="list no-border">
+						<div class="item white opacity-50 margin-bottom">
+							<input type="email" id="email" placeholder="Digite seu email" ng-model="Email.email">
+						</div>
+						<div class="item white opacity-50 margin-bottom">
+							<input type="password" id="senha" placeholder="Digite sua senha" ng-model="Senha.senha">
+						</div>
+						<button class="orange full margin-bottom" ng-click="autenticacao()">Entrar</button>
+						<button class="border-white text-white full" ng-click="go('cadastroUsuarios')">Cadastrar-se</button>
+						<br></br>
+						<a href="#/homePrincipal">
+							<button class="white-opacity-30 text-white radius full margin-bottom">Voltar</button>
+						</a>
+					</div>
+				</div>
+				<div class="col-10"></div>
+			</div>
+			
+		</ion-content>
+	</ion-pane>
+</ion-view>

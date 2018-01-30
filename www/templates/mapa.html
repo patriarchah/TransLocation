@@ -1,0 +1,24 @@
+<body ng-app="starter">
+  <ion-pane>
+    <div id="map"></div>
+    <ion-header-bar class="bar-energized">
+      <div class="right">
+        <h1 class="title" style="font-family:'Timmana',sans-serif; font-size:24px">Localizacao</h1>
+      </div>
+      <div class="left">
+        <button class="icon-text orange radius small" ng-click="go('home')">
+          <i class="icon ion-android-arrow-back"></i>
+          Voltar
+        </button>
+        <button class="icon-text orange radius small" ng-click="addMarker()">
+          <i class="icon ion-ios-location"></i>
+          Ativar Localização
+        </button>
+
+      </div>
+    </ion-header-bar>
+    <ion-nav-view></ion-nav-view>
+
+  </ion-pane>
+
+</body>

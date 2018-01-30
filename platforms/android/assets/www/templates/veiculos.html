@@ -1,0 +1,26 @@
+<ion-view view-title="veiculos">
+    <ion-header-bar class="bar-energized">
+        <h1 class="title" style="text-align: center; font-family:'Timmana',sans-serif; font-size:24px">Veiculos</h1>
+        <div class="left">
+                <button class="icon-text orange radius small" ng-click="go('home')">
+          <i  class="icon ion-android-arrow-back"></i>
+          Voltar
+        </button>
+            </div>
+    </ion-header-bar>
+    <ion-content ng-controller="veiculosCtrl">
+        <div class="list">
+            <div id="item" ng-repeat="veiculo in veiculos">
+                <img class="left avatar circle" src="http://www.revescap.com.br/img/transporte_escolar/transporte_escolar_02gd.jpg">
+
+                <button id="trash" class="icon ion-trash-a" ng-click="excluir($index)"></button>
+
+                <h2 id="titulo">{{veiculo.modelo}}</h2>
+                <p class="block-p">
+                    Marca: {{veiculo.marca}}<br />
+                </p>
+            </div>
+        </div>
+    </ion-content>
+    <button class="orange big circle icon ion-plus shadow float-bottom-right" ng-click="go('cadastroVeiculos')"></button>
+</ion-view>

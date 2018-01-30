@@ -1,0 +1,57 @@
+<ion-view view-title="Home">
+
+	<ion-header-bar class="bar-energized">
+		<h1 class="title" style="text-align: center; font-family:'Timmana',sans-serif; font-size:30px">TransLocation</h1>
+
+		</div>
+	</ion-header-bar>
+
+	<ion-content>
+		<div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+
+			<div id="linha1" class="row">
+
+				<a href="#/alunos">
+					<div id="card1" class="col shadow cover radius">
+						<h2 style="font-family:'Timmana',sans-serif; font-size:24px">Alunos</h2>
+					</div>
+				</a>
+
+				<div class="space"></div>
+
+				<a href="#/alunosFinanceiro">
+					<div id="card2" class="col shadow cover radius">
+						<h2 style="font-family:'Timmana',sans-serif; font-size:24px">Financeiro</h2>
+					</div>
+				</a>
+			</div>
+
+			<div id="linha2" class="row">
+				<a href="#/veiculos">
+					<div id="card3" class="col shadow cover radius">
+						<h2 style="font-family:'Timmana',sans-serif; font-size:24px">Veiculos</h2>
+					</div>
+				</a>
+				
+				<div class="space"></div>
+
+				<a href="#/motoristas">
+					<div id="card4" class="col shadow cover radius">
+						<h2 style="font-family:'Timmana',sans-serif; font-size:24px">Motoristas</h2>
+					</div>
+				</a>
+			</div>
+
+			<div id="botoes" class="list no-border">
+
+				<div ng-controller="mapaCtrl">
+					<button class="white-opacity-50 full radius margin-bottom" ng-click="go('mapa')">Localizacao</button>
+				</div>
+
+				<div ng-controller="loginCtrl">
+					<button class="white-opacity-50 full radius margin-bottom " ng-click="logOut()">Sair</button>
+				</div>
+			</div>
+
+	</ion-content>
+</ion-view>

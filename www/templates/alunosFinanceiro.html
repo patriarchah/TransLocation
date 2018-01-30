@@ -1,0 +1,32 @@
+<ion-view view-title="alunos"> 
+	<ion-header-bar class="bar-energized">
+		<div class="center">
+		<h1 class="title">Alunos Financeiro</h1>
+		</div>
+		<div class="left">
+				<button class="icon-text orange radius small" ng-click="go('home')">
+			  <i  class="icon ion-android-arrow-back"></i>
+			  Voltar
+			</button>
+			</div>
+	</ion-header-bar>
+	<ion-content ng-controller="financeiroCtrl">
+        
+        <div class="list" >
+           
+            <a href="#/financeiro" id="item" ng-repeat="aluno in aluno" ng-click="selecionado(aluno)">
+				<img class="left avatar circle" src="img/perfil.png">
+			
+				<h2 id="titulo">{{aluno.nome}}</h2>
+				<p class="block-p">
+					Idade: {{aluno.idade}}<br />
+					<br />
+					Responsável: {{aluno.responsavel}}<br />
+					<br />
+					Escola: {{aluno.escola}}<br />
+					<br />
+				</p>
+            </a>
+			</div>
+	</ion-content>
+</ion-view>

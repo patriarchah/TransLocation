@@ -1,0 +1,29 @@
+<ion-view view-title="cadastroUsuarios">
+	<ion-header-bar class="bar-energized">
+		<div class="left">
+			<button class="icon-text orange radius small" ng-click="go('login')">
+	  <i  class="icon ion-android-arrow-back"></i>
+	  Voltar
+    </button>
+		</div>
+
+	</ion-header-bar>
+
+	<ion-content ng-controller="loginCtrl">
+
+		<div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+
+			<div class="list no-border">
+				<h2 class="title" style="font-size:30px; color:white; text-align: center; font-family:'Timmana',sans-serif; font-size:30px">
+					Cadastro de Usuarios </h2>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="email" id="email" placeholder="Digite seu email" ng-model="Email.email">
+				</div>
+				<div class="item white opacity-50 margin-bottom">
+					<input type="password" id="senha" placeholder="Digite sua senha" ng-model="Senha.senha">
+				</div>
+				<button class="border-white text-white full" ng-click="cadastrarUsuario()">Cadastrar</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

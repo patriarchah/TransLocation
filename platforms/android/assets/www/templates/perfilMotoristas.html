@@ -1,0 +1,27 @@
+<ion-view view-title="perfilMotoristas">
+    <ion-header-bar class="bar-energized">
+        <div class="left">
+            <button class="icon-text orange radius small" ng-click="go('motoristas')">
+                <i class="icon ion-android-arrow-back"></i>
+                Voltar
+            </button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <div class="header text-white">
+        </div>
+        <div class="content cover row-center" style="background-image:url(/img/fundo.jpg)">
+            <div class="cover padding align-center">
+               
+                <img class="avatar circle border-white shadow" src="img/perfil.png">
+                <h1 style="color:white; font-family:'Timmana',sans-serif; font-size:24px" id="titulo">Nome: {{moto.nome}}</h1>
+                <h1 style="color:white; font-family:'Timmana',sans-serif; font-size:22px" id="titulo">Idade: {{moto.idade}}</h1>
+                <h1 style="color:white; font-family:'Timmana',sans-serif; font-size:20px"> CPF: {{moto.cpf}}</h1>
+                <h1 style="color:white; font-family:'Timmana',sans-serif; font-size:20px"> Endereço: {{moto.endereco}}</h1>
+            </div>
+        </div>
+    </div>
+    </ion-content>
+</ion-view>
